@@ -82,7 +82,7 @@ ClassicEditor.defaultConfig = {
 			'undo',
 			'redo',
 			'|',
-			'comments'
+			'comment'
 		]
 	},
 	image: {
