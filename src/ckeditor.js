@@ -91,6 +91,9 @@ ClassicEditor.defaultConfig = {
 			'comment'
 		]
 	},
+	alignment: {
+		options: [ 'left', 'right', 'center', 'justify' ]
+	},
 	image: {
 		toolbar: [
 			'imageStyle:full',
