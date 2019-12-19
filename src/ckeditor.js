@@ -31,6 +31,12 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Comments from '@ckeditor/ckeditor5-comments/src/comments';
+import TrackChanges from '@ckeditor/ckeditor5-track-changes/src/trackchanges';
+import RealTimeCollaborativeEditing from '@ckeditor/ckeditor5-real-time-collaboration/src/realtimecollaborativeediting';
+import RealTimeCollaborativeComments from '@ckeditor/ckeditor5-real-time-collaboration/src/realtimecollaborativecomments';
+import RealTimeCollaborativeTrackChanges from '@ckeditor/ckeditor5-real-time-collaboration/src/realtimecollaborativetrackchanges';
+import PresenceList from '@ckeditor/ckeditor5-real-time-collaboration/src/presencelist';
+
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -60,7 +66,12 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	Comments
+	Comments,
+	TrackChanges,
+	RealTimeCollaborativeEditing,
+	RealTimeCollaborativeComments,
+	RealTimeCollaborativeTrackChanges,
+	PresenceList
 ];
 
 // Editor configuration.
@@ -88,7 +99,8 @@ ClassicEditor.defaultConfig = {
 			'undo',
 			'redo',
 			'|',
-			'comment'
+			'comment',
+			'trackChanges'
 		]
 	},
 	alignment: {
