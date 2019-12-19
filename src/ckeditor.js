@@ -31,7 +31,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Comments from '@ckeditor/ckeditor5-comments/src/comments';
-import TrackChanges from '@ckeditor/ckeditor5-track-changes/src/trackchanges';
+//import TrackChanges from '@ckeditor/ckeditor5-track-changes/src/trackchanges';
 // import RealTimeCollaborativeEditing from '@ckeditor/ckeditor5-real-time-collaboration/src/realtimecollaborativeediting';
 // import RealTimeCollaborativeComments from '@ckeditor/ckeditor5-real-time-collaboration/src/realtimecollaborativecomments';
 // import RealTimeCollaborativeTrackChanges from '@ckeditor/ckeditor5-real-time-collaboration/src/realtimecollaborativetrackchanges';
@@ -66,8 +66,7 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	Comments,
-	TrackChanges
+	Comments
 ];
 
 // Editor configuration.
@@ -95,8 +94,7 @@ ClassicEditor.defaultConfig = {
 			'undo',
 			'redo',
 			'|',
-			'comment',
-			'trackChanges'
+			'comment'
 		]
 	},
 	alignment: {
