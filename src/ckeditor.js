@@ -31,6 +31,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Comments from '@ckeditor/ckeditor5-comments/src/comments';
+import Input from '@ckeditor/ckeditor5-typing/src/input';
 //import TrackChanges from '@ckeditor/ckeditor5-track-changes/src/trackchanges';
 // import RealTimeCollaborativeEditing from '@ckeditor/ckeditor5-real-time-collaboration/src/realtimecollaborativeediting';
 // import RealTimeCollaborativeComments from '@ckeditor/ckeditor5-real-time-collaboration/src/realtimecollaborativecomments';
@@ -66,7 +67,8 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	Comments
+	Comments,
+	Input
 ];
 
 // Editor configuration.
